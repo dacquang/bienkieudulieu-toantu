@@ -1,0 +1,32 @@
+<!DOCTYPE
+<html>
+<body>
+        <script>
+            function sum(){
+            var toan = parseInt(document.getElementById('toan').value);
+            var ly = parseInt(document.getElementById('ly').value);
+            var hoa = parseInt(document.getElementById('hoa').value);
+            var sum = toan + ly + hoa;
+            var tb = (sum/3);
+            // console.log(sum);
+            document.getElementById('sum').value = sum;
+            document.getElementById('tb').value = tb;
+            }
+        </script>
+    
+<h2>Tính tổng các môn và điểm trung bình các môn</h2>
+<span>Môn Toán : </span>
+<input type="text" id="toan"><br><br>
+<span>Môn Lý : </span>
+<input type="text" id="ly"><br><br>
+<span>Môn Hóa : </span>
+<input type="text" id="hoa"><br><br>
+<input type="button" onclick="sum();" value="Kết Quả" id="result"><br><br>
+<span>Tổng : </span><br><br>
+<input type="text" id="sum"><br><br>
+<p>Điểm trung bình</p><br><br>  
+<input type="text" id="tb"><br><br>
+ 
+    </body>
+
+</html>
